@@ -11,6 +11,8 @@ pipeline {
         stage('Build') {
             steps {
                     script {
+                        sh 'pwd'
+                        sh 'ls -al'
                         sh 'ng build'
                     }
             }
