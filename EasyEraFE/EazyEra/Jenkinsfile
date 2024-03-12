@@ -37,7 +37,7 @@ pipeline {
             steps {
               dir('EasyEraFE/EazyEra') { // Change to the Angular project directory
                  script {
-                      sh 'aws s3 cp EasyEraFE/EazyEra/dist s3://eazyera/build-pkg/ --recursive'
+                      sh 'aws s3 cp dist s3://eazyera/build-pkg/ --recursive'
                    }
               }
             }
