@@ -2,6 +2,13 @@ pipeline {
     agent any
 
     stages {
+        stage('Prepare Workspace') {
+            steps {
+                // This step ensures the workspace is clean before starting the build
+                cleanWs()
+            }
+        }
+
         stage('Checkout') {
             steps {
                 checkout scm
@@ -21,6 +28,20 @@ pipeline {
             }
         }
 
+        stage('Push to S3') {
+            steps {
+                script {
+                    // Ensure AWS CLI is installed and configured on your Jenkins agent
+                    // Replace 'your-s3-bucket-name' with your actual S3 bucket name
+                    // Adjust the 'local-dir-path-to-upload' to match the path you want to upload from, typically the build artifacts directory
+                    // Example: if your build artifacts are in 'dist/', you might use 'EasyEraFE/EazyEra/dist'
+                    sh "aws s3 cp EasyEraFE/EazyEra/dist s3://eazyera/build-pkg/ --recursive"
+                }
+            }
+        }
+        
+        // Uncomment and modify the below stages as needed
+        
         // stage('Unit Tests') {
         //     steps {
         //         dir('EasyEraFE/EazyEra') { // Change to the Angular project directory
@@ -40,16 +61,5 @@ pipeline {
         //         }
         //     }
         // }
-
-        // Add more stages if needed, e.g., for deployment
-    }
-
-    post {
-        always {
-            // Example action: clean up workspace
-            cleanWs()
-            // Or simply echo a message
-            echo 'Pipeline execution is complete.'
-        }
     }
 }
