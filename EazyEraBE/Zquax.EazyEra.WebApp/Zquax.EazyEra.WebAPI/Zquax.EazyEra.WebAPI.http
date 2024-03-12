@@ -1,0 +1,6 @@
+@Zquax.EazyEra.WebAPI_HostAddress = http://localhost:5140
+
+GET {{Zquax.EazyEra.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

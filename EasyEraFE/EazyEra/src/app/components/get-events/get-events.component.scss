@@ -1,0 +1,14 @@
+.animated {
+    animation-duration: 1s;
+  }
+  
+  .fadeInUp {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .fadeInUp.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

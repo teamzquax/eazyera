@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Zquax.EazyEra.WebApp.props" />
+</Project>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Easy Era</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+
+
+        <div class="login-page">
+            <div class="forms-container">
+                <div class="signin-signup">
+                    <form action="#" class="sign-in-form">
+                        <h2 class="title">Sign in</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username"  value="" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password"  value="" required />
+                        </div>
+                        <button type="submit" class="button-primary">Login</button>
+
+                    </form>
+                    <form action="#" class="sign-up-form">
+                        <h2 class="title">Sign up</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Full Name" value="" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Email" value="" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-phone"></i>
+                            <input type="text" placeholder="Phone Number" value="" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" value="" required />
+                        </div>
+                        
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" value="" required  />
+                        </div>
+                        <div class="input-field">
+                            <i class="far fa-building"></i>
+                            <input type="text" placeholder="Company Name" value="" />
+                        </div>
+                        <button type="submit" class="button-primary">Sign up</button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <img src="img/logo.png" class="logo-img" alt="" />
+                        <h3>New to our community ?</h3>
+                        <p>
+                            Your new era begins here. Sign up and be part of a community that thrives on collaboration,
+                            innovation, and the artistry of photography.
+                        </p>
+                        <button class="button-tersiyer" id="sign-up-btn">
+                            Sign up
+                        </button>
+                    </div>
+
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <img src="img/logo.png" class="logo-img" alt="" />
+                        <h3>Already a part of our Community?</h3>
+                        <p>
+                            Your journey with us continues, bringing you closer to a community of photographers,
+                            editors, and creative minds. Thank you for choosing EAZYERA
+                        </p>
+                        <button class="button-tersiyer" id="sign-in-btn">
+                            Sign in
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        const sign_in_btn = document.querySelector("#sign-in-btn");
+        const sign_up_btn = document.querySelector("#sign-up-btn");
+        const container = document.querySelector(".login-page");
+
+        sign_up_btn.addEventListener("click", () => {
+            container.classList.add("sign-up-mode");
+        });
+
+        sign_in_btn.addEventListener("click", () => {
+            container.classList.remove("sign-up-mode");
+        });
+    </script>
+</body>
+
+</html>

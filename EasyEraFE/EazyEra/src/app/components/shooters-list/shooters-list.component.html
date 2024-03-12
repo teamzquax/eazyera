@@ -1,0 +1,55 @@
+<section class="contact section-padding bg-blck">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 animate-box shooters-cards" data-animate-effect="fadeInUp" *ngFor="let photographer of photographers">
+          <div class="card">
+            <div class="img">
+              <img [src]="photographer.imageUrl">
+            </div>
+            <div class="infos">
+              <div class="name">
+                <h2>{{ photographer.name }}</h2>
+                <h4><a href="#gallery-1" class="btn-gallery">View Portfolio</a></h4>
+              </div>
+              <p class="text">
+                <span style="color: #bed754;"><i class="far fa-check-circle"></i></span> Equiments
+              </p>
+              <ul class="stats">
+                <li>
+                    <h3>{{ photographer.photographer }}</h3>
+                    <h4 style="color: #bed754;">Photographer</h4>
+                  </li>
+                <li>
+                  <h3>{{ photographer.experience }}</h3>
+                  <h4 style="color: #bed754;">Experience</h4>
+                </li>
+                <li>
+                  <h3>{{ photographer.shoots }}</h3>
+                  <h4 style="color: #bed754;">Shoots</h4>
+                </li>
+              </ul>
+              <div class="links text-center mt-5">
+                <button class="button-primary mb-2">Accept</button>
+              </div>
+            </div>
+          </div>
+          <div id="gallery-1" class="hidden">
+            <a *ngFor="let image of photographer.galleryImageUrls" [href]="image">Image</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <!-- Pagination -->
+          <ul class="news-pagination-wrap align-center mt-90">
+            <li><a href=""><i class="ti-angle-left"></i></a></li>
+            <li><a href="">1</a></li>
+            <li><a href="" class="active">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href=""><i class="ti-angle-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  

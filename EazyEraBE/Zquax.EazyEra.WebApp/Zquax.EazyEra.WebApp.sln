@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zquax.EazyEra.Manager", "Zquax.EazyEra.Manager\Zquax.EazyEra.Manager.csproj", "{F26FBB29-C5A4-47DC-A638-83796F164D2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zquax.EazyEra.DatabaseCommon", "Zquax.EazyEra.DatabaseCommon\Zquax.EazyEra.DatabaseCommon.csproj", "{C78FCBC2-855B-4660-B6C0-6921E6D9DFD2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Zquax.EazyEra.WebAppDB", "Zquax.EazyEra.WebAppDB\Zquax.EazyEra.WebAppDB.sqlproj", "{50CB9051-4C9F-404B-86DC-9C288B6836E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zquax.EazyEra.Repository", "Zquax.EazyEra.Repository\Zquax.EazyEra.Repository.csproj", "{68CEA14A-6472-4441-A8FF-B4B26D07576D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zquax.EazyEra.Models", "Zquax.EazyEra.Models\Zquax.EazyEra.Models.csproj", "{BB8B2CF3-CB3D-45EA-8825-6B5793872A2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zquax.EazyEra.WebAPI", "Zquax.EazyEra.WebAPI\Zquax.EazyEra.WebAPI.csproj", "{4D1F71A2-CB6A-4A1D-9453-52BAA89BF405}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F26FBB29-C5A4-47DC-A638-83796F164D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F26FBB29-C5A4-47DC-A638-83796F164D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F26FBB29-C5A4-47DC-A638-83796F164D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F26FBB29-C5A4-47DC-A638-83796F164D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C78FCBC2-855B-4660-B6C0-6921E6D9DFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78FCBC2-855B-4660-B6C0-6921E6D9DFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78FCBC2-855B-4660-B6C0-6921E6D9DFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78FCBC2-855B-4660-B6C0-6921E6D9DFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50CB9051-4C9F-404B-86DC-9C288B6836E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CB9051-4C9F-404B-86DC-9C288B6836E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CB9051-4C9F-404B-86DC-9C288B6836E6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{50CB9051-4C9F-404B-86DC-9C288B6836E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CB9051-4C9F-404B-86DC-9C288B6836E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50CB9051-4C9F-404B-86DC-9C288B6836E6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{68CEA14A-6472-4441-A8FF-B4B26D07576D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68CEA14A-6472-4441-A8FF-B4B26D07576D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68CEA14A-6472-4441-A8FF-B4B26D07576D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68CEA14A-6472-4441-A8FF-B4B26D07576D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8B2CF3-CB3D-45EA-8825-6B5793872A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8B2CF3-CB3D-45EA-8825-6B5793872A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8B2CF3-CB3D-45EA-8825-6B5793872A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8B2CF3-CB3D-45EA-8825-6B5793872A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D1F71A2-CB6A-4A1D-9453-52BAA89BF405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1F71A2-CB6A-4A1D-9453-52BAA89BF405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1F71A2-CB6A-4A1D-9453-52BAA89BF405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1F71A2-CB6A-4A1D-9453-52BAA89BF405}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDFF7F61-2792-4A84-88DF-62FFBA716F28}
+	EndGlobalSection
+EndGlobal

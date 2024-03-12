@@ -1,0 +1,277 @@
+<section class="banner-header banner-img banner-img-top section-padding bg-img bg-fixed" data-overlay-darkgray="1"
+        data-background="assets/img/banner/6.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 text-left caption">
+                    <h1>Get Shooters</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact section-padding bg-blck">
+        <div class="container">
+            <div class="row mb-120">
+
+                <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
+                    <div class="form-box">
+
+                        <form method="post" class="contact__form" action="">
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <h6>CANDID</h6>
+                                    <div class="cont-one d-flex">
+                                        <label style="padding-right: 20px;">Photographer</label>
+                                        <div class="crtdiv-one">
+                                            <span class="qty-one">
+                                                <span class="dec-one" (click)="decrementValue('candidphotographer')">
+                                                    <i class="fa fa-minus-square" aria-hidden="true">-</i>
+                                                </span>
+                                                
+                                                <span class="num-one">
+                                                    {{candidphotographer}}
+                                                </span>
+                                                <span class="inc-one" (click)="incrementValue('candidphotographer')">
+                                                    <i class="fa fa-plus-square" aria-hidden="true">+</i>
+                                                </span>
+                                            </span>
+                                            <button id="btn-one" type="button" class="cart-one">ADD</button>
+                                        </div>
+                                    </div>
+                                    <div class="cont-two d-flex">
+                                        <label style="padding-right: 20px;">Cinematographer</label>
+                                        <div class="crtdiv-two">
+                                            <span class="qty-two" >
+                                                <span class="dec-two" (click)="decrementValue('candidcinematographer')">
+                                                    <i class="fa fa-minus-square" aria-hidden="true">-</i>
+                                                </span>
+                                                <span class="num-two">
+                                                    {{candidcinematographer}}
+                                                </span>
+                                                <span class="inc-two" (click)="incrementValue('candidcinematographer')">
+                                                    <i class="fa fa-plus-square" aria-hidden="true">+</i>
+                                                </span>
+                                            </span>
+                                            <button id="btn-two" type="button" class="cart-two">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border-1">
+                                <div class="col-md-12 form-group">
+                                    <h6>TRADITIONAL</h6>
+
+                                    <div class="cont-three d-flex">
+                                        <label style="padding-right: 20px;">Photographer</label>
+                                        <div class="crtdiv-three">
+                                            <span class="qty-three">
+                                                <span class="dec-three" (click)="decrementValue('tridtionalphotographer')">
+                                                    <i class="fa fa-minus-square" aria-hidden="true">-</i>
+                                                </span>
+                                                <span class="num-three">
+                                                    {{tridtionalphotographer}}
+                                                </span>
+                                                <span class="inc-three" (click)="incrementValue('tridtionalphotographer')">
+                                                    <i class="fa fa-plus-square" aria-hidden="true">+</i>
+                                                </span>
+                                            </span>
+                                            <button id="btn-three" type="button" class="cart-three">ADD</button>
+                                        </div>
+                                    </div>
+                                    <div class="cont-four d-flex">
+                                        <label style="padding-right: 20px;">Videographer</label>
+                                        <div class="crtdiv-four">
+                                            <span class="qty-four">
+                                                <span class="dec-four" (click)="decrementValue('tridtionalvideographer')">
+                                                    <i class="fa fa-minus-square" aria-hidden="true">-</i>
+                                                </span>
+                                                <span class="num-four">
+                                                    {{tridtionalvideographer}}
+                                                </span>
+                                                <span class="inc-four" (click)="incrementValue('tridtionalvideographer')">
+                                                    <i class="fa fa-plus-square" aria-hidden="true">+</i>
+                                                </span>
+                                            </span>
+                                            <button id="btn-four" type="button" class="cart-four">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border-1">
+
+                                <div class="col-md-12 form-group">
+                                    <h6>ASSISTANT</h6>
+
+                                    <div class="cont-five d-flex">
+                                        <label style="padding-right: 20px;">Photographer</label>
+                                        <div class="crtdiv-five">
+                                            <span class="qty-five">
+                                                <span class="dec-five" (click)="decrementValue('assistantphotographer')">
+                                                    <i class="fa fa-minus-square" aria-hidden="true">-</i>
+                                                </span>
+                                                <span class="num-five">
+                                                    {{assistantphotographer}}
+                                                </span>
+                                                <span class="inc-five" (click)="incrementValue('assistantphotographer')">
+                                                    <i class="fa fa-plus-square" aria-hidden="true">+</i>
+                                                </span>
+                                            </span>
+                                            <button id="btn-five" type="button" class="cart-five">ADD</button>
+                                        </div>
+                                    </div>
+                                    <div class="cont-six d-flex">
+                                        <label style="padding-right: 20px;">Videographer</label>
+                                        <div class="crtdiv-six">
+                                            <span class="qty-six">
+                                                <span class="dec-six" (click)="decrementValue('assistantvideographer')">
+                                                    <i class="fa fa-minus-square" aria-hidden="true">-</i>
+                                                </span>
+                                                <span class="num-six">
+                                                    {{assistantvideographer}}
+                                                </span>
+                                                <span class="inc-six" (click)="incrementValue('assistantvideographer')">
+                                                    <i class="fa fa-plus-square" aria-hidden="true">+</i>
+                                                </span>
+                                            </span>
+                                            <button id="btn-six" type="button" class="cart-six">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border-1">
+                                <div class="col-md-12 form-group">
+                                    <div class="cont-seven d-flex">
+                                        <label style="padding-right: 20px;">Drone</label>
+                                        <div class="crtdiv-seven">
+                                            <span class="qty-seven">
+                                                <span class="dec-seven" (click)="decrementValue('drone')">
+                                                    <i class="fa fa-minus-square" aria-hidden="true">-</i>
+                                                </span>
+                                                <span class="num-seven">
+                                                    {{drone}}
+                                                </span>
+                                                <span class="inc-seven" (click)="incrementValue('drone')">
+                                                    <i class="fa fa-plus-square" aria-hidden="true">+</i>
+                                                </span>
+                                            </span>
+                                            <button id="btn-seven" type="button" class="cart-seven">ADD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="border-1">
+                                <div class="col-md-12 form-group">
+                                    <!-- <label>For which event you are looking for? *</label> -->
+                                    <input name="event" type="text" placeholder="Event Name" />
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <!-- <label>Shoot Location *</label> -->
+                                    <input name="phone" type="text" placeholder="Shoot Location" />
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label>When do you need Shooter?</label>
+                                    <input name="subject" type="datetime-local" placeholder="Subject" />
+                                </div>
+                                <div class="col-md-12 form-group quick-shooters">
+                                    <label>Need Shooter Quickly</label>
+                                    <div class="form-check form-switch form-switch-sm">
+
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pb-3 text-center">
+                                    <button class="button-tersiyer"><a href="shooters-cart.html">Submit</a></button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-md-6 mb-60 animate-box" data-animate-effect="fadeInUp">
+                    <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+                        <div class="carousel-inner w-100">
+                            <div class="carousel-item active">
+                                <div class="col-md-12 item-card">
+                                    <div class="card custom-card-carousel">
+                                        <img class="img-fluid m-width-350" src="assets/img/home/slide-one.jpg" width="100%">
+                                        <div class="card-body">
+                                            <h4 style="color:#bed754;">EAZYERA</h4>
+                                            <h5 style="color:#bed754;">Discover, Collab, Repeat</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-12 item-card">
+                                    <div class="card custom-card-carousel">
+                                        <img class="img-fluid m-width-350" src="assets/img/home/slide-two.jpg" width="100%">
+                                        <div class="card-body">
+                                            <h5 style="color:#bed754;">Discover perfect shooters with ease.</h5>
+                                            <a href="signup.html" class="button-tersiyer">Get Shooters</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-12 item-card">
+                                    <div class="card custom-card-carousel">
+                                        <img class="img-fluid m-width-350" src="assets/img/home/slide-three.jpg" width="100%">
+                                        <div class="card-body">
+                                            <h5 style="color:#bed754;">Find shoots which match your style</h5>
+                                            <a href="signup.html" class="button-tersiyer">Get Events</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-12 item-card">
+                                    <div class="card custom-card-carousel">
+                                        <img class="img-fluid m-width-350" src="assets/img/home/slide-four.jpg" width="100%">
+                                        <div class="card-body">
+                                            <h5 style="color:#bed754;">Get skilled editors for your projects seamlessly.
+                                            </h5>
+                                            <a href="signup.html" class="button-tersiyer">Get Editors</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-12 item-card">
+                                    <div class="card custom-card-carousel">
+                                        <img class="img-fluid m-width-350" src="assets/img/home/slide-five.jpg" width="100%">
+                                        <div class="card-body">
+                                            <h5 style="color:#bed754;">Your next editing project is just a click away.
+                                            </h5>
+                                            <a href="contact.html" class="button-tersiyer">Get Projects</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-md-12 item-card">
+                                    <div class="card custom-card-carousel">
+                                        <img class="img-fluid m-width-350" src="assets/img/home/slide-six.jpg" width="100%">
+                                        <div class="card-body">
+                                            <h5 style="color:#bed754;">Conquering your next drone shoot is now smooth
+                                                with Eazyera.</h5>
+                                            <!-- <a href="contact.html" class="button-primary">Get Projects</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
