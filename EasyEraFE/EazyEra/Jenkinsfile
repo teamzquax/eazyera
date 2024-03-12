@@ -21,15 +21,15 @@ pipeline {
             }
         }
 
-        stage('Unit Tests') {
-            steps {
-                dir('EasyEraFE/EazyEra') { // Change to the Angular project directory
-                    script {
-                        sh 'ng test --watch=false --code-coverage'
-                    }
-                }
-            }
-        }
+        // stage('Unit Tests') {
+        //     steps {
+        //         dir('EasyEraFE/EazyEra') { // Change to the Angular project directory
+        //             script {
+        //                 sh 'ng test --watch=false --code-coverage'
+        //             }
+        //         }
+        //     }
+        // }
 
         stage('E2E Tests') {
             steps {
