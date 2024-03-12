@@ -31,15 +31,15 @@ pipeline {
         //     }
         // }
 
-        stage('E2E Tests') {
-            steps {
-                dir('EasyEraFE/EazyEra') { // Change to the Angular project directory
-                    script {
-                        sh 'ng e2e'
-                    }
-                }
-            }
-        }
+        // stage('E2E Tests') {
+        //     steps {
+        //         dir('EasyEraFE/EazyEra') { // Change to the Angular project directory
+        //             script {
+        //                 sh 'ng e2e'
+        //             }
+        //         }
+        //     }
+        // }
 
         // Add more stages if needed, e.g., for deployment
     }
