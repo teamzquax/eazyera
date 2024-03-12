@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                    script {
+                        sh 'ng build'
+                    }
+            }
+        }
+
+        stage('Unit Tests') {
+            steps {
+                    script {
+                        sh 'ng test --watch=false --code-coverage'
+                    }
+            }
+        }
+
+        stage('E2E Tests') {
+            steps {
+                    script {
+                        sh 'ng e2e'
+                    }
+            }
+        }
+
+        // Add more stages if needed, e.g., for deployment
+    }
+
+    post {
+        always {
+            // Example action: clean up workspace
+            cleanWs()
+            // Or simply echo a message
+            echo 'Pipeline execution is complete.'
+        }
+    }
+}
