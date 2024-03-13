@@ -1,0 +1,68 @@
+pipeline {
+    agent any
+
+    environment {
+        // Assuming 'aws-s3-credentials' is the ID you gave your credentials
+        AWS_CREDENTIALS = credentials('aws')
+    }
+
+    stages {
+        stage('Prepare Workspace') {
+            steps {
+                // This step ensures the workspace is clean before starting the build
+                cleanWs()
+            }
+        }
+
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                dir('EasyEraFE/EazyEra') { // Change to the Angular project directory
+                    script {
+                        sh 'ls -al'
+                        sh 'pwd'
+                        sh 'npm install'
+                        sh 'ng build'
+                    }
+                }
+            }
+        }
+
+        stage('Push to S3') {
+            steps {
+              dir('EasyEraFE/EazyEra') { // Change to the Angular project directory
+                 script {
+                      sh 'aws s3 cp dist s3://eazyera/build-pkg/ --recursive'
+                   }
+              }
+            }
+        }
+        
+        // Uncomment and modify the below stages as needed
+        
+        // stage('Unit Tests') {
+        //     steps {
+        //         dir('EasyEraFE/EazyEra') { // Change to the Angular project directory
+        //             script {
+        //                 sh 'ng test --watch=false --code-coverage'
+        //             }
+        //         }
+        //     }
+        // }
+
+        // stage('E2E Tests') {
+        //     steps {
+        //         dir('EasyEraFE/EazyEra') { // Change to the Angular project directory
+        //             script {
+        //                 sh 'ng e2e'
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
